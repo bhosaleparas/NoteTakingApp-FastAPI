@@ -40,6 +40,11 @@ class NoteCreate(NoteBase):
 class NoteBase(BaseModel):
     title:Optional[str]=None
     content:Optional[str]=None
+    
+class NoteUpdate(BaseModel):
+    title: Optional[str] = None
+    content: Optional[str] = None
+
 
 class Note(NoteBase):
     id:int
