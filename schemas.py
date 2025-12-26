@@ -68,6 +68,7 @@ class TokenDate(BaseModel):
     username:Optional[str]=None
 
 
+
 # Response schema
 class UserWithNotes(User):
     notes:List[Note]=[]
