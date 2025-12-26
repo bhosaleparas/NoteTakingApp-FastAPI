@@ -58,3 +58,19 @@ class Note(NoteBase):
 
 
 # Token Schema
+
+class Token(BaseModel):
+    access_token:str
+    token_type:str
+
+
+class TokenDate(BaseModel):
+    username:Optional[str]=None
+
+
+# Response schema
+class UserWithNotes(User):
+    notes:List[Note]=[]
+    
+    class Config:
+        from_attributes = True
