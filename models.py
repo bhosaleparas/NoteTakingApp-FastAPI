@@ -15,7 +15,7 @@ class User(Base):
     created_at=Column(DateTime(timezone=True),server_default=func.now())
     
     # relationships with notes
-    notes=relationship("Note",back_populates='owner',cascade="all, delete-orphan")
+    notes=relationship("Notes",back_populates='owner',cascade="all, delete-orphan")
     
 
 class Notes(Base):
