@@ -129,23 +129,24 @@ uvicorn main:app --reload
 }
 ```
 
-### Signup Response
+### Note Response
 ```json
 {
-  "id": 1,
-  "email": "john@example.com",
-  "username": "johndoe",
-  "full_name": "John Doe",
-  "created_at": "2024-01-15T10:30:00Z"
+  
+  "title": "My first Note",
+  "content": "This is my first note content"
+  
 }
 ```
+
+
 
 ### Note Response
 ```json
 {
   "id": 1,
-  "title": "Shopping List",
-  "content": "Milk, Eggs, Bread",
+  "title": "My first Note",
+  "content": "This is my first note content",
   "owner_id": 1,
   "created_at": "2024-01-15T10:35:00Z",
   "updated_at": "2024-01-15T11:00:00Z"
