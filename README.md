@@ -129,7 +129,7 @@ uvicorn main:app --reload
 }
 ```
 
-### Note Response
+### Note Request
 ```json
 {
   
@@ -141,7 +141,7 @@ uvicorn main:app --reload
 
 
 
-### Note Request
+### Note Response
 ```json
 {
   "id": 1,
